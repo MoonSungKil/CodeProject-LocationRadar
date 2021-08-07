@@ -4,6 +4,7 @@ import ShareRadar from "./components/ShareRadar";
 import ListedShare from "./components/ListedShare";
 import { Route, Switch } from "react-router-dom";
 
+// something
 function App() {
   return (
     <div className={styles.App}>
