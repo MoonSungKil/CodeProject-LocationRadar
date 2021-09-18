@@ -3,6 +3,7 @@ import styles from "./App.module.css";
 import ShareRadar from "./components/ShareRadar";
 import ListedShare from "./components/ListedShare";
 import { Route, Switch } from "react-router-dom";
+import Layout from "./components/Layout";
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
       <ListedShare />
       <Switch>
         <Route exact path="/">
+          <Layout />
+        </Route>
+        <Route exact path="/radar">
           <ShareRadar
             dotsColor="#90e0ef"
             linearGradient="linear-gradient(
